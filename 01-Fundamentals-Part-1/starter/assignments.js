@@ -21,7 +21,12 @@ let johnMass = 95;
 let markHeight = 1.69;
 let johnHeight = 1.88;
 
-console.log ((markMass ** 2) / markHeight);
+let BMIMark = markMass / markHeight ** 2;
+let BMIJohn = johnMass / johnHeight ** 2;
+
+let markHigherBMI = BMIMark > BMIJohn;
+
+console.log (BMIJohn, BMIJohn, markHigherBMI);
 
 
 
