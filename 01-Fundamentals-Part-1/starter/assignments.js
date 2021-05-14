@@ -59,18 +59,51 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀*/
 
-let dolphinScoreAverage = Math.floor((96 + 108 + 89) / 3);
-let koalaScoreAverage = Math.floor((81  + 91 + 110) / 3);
+// let dolphinScoreAverage = Math.floor((96 + 108 + 89) / 3);
+// let koalaScoreAverage = Math.floor((81  + 91 + 110) / 3);
 
-console.log(dolphinScoreAverage, koalaScoreAverage)
+// console.log(dolphinScoreAverage, koalaScoreAverage)
 
-if (dolphinScoreAverage > koalaScoreAverage){
-    console.log(`The dolphins won with an average score of ${dolphinScoreAverage}!`);
-}else if(koalaScoreAverage > dolphinScoreAverage){
-    console.log(`The koalas won with an average score of ${koalaScoreAverage}!`);
-}else if (dolphinScoreAverage === koalaScoreAverage) {
-    console.log(`The dolphins and the koalas tied!`);
+// if (dolphinScoreAverage > koalaScoreAverage){
+//     console.log(`The dolphins won with an average score of ${dolphinScoreAverage}!`);
+// }else if(koalaScoreAverage > dolphinScoreAverage){
+//     console.log(`The koalas won with an average score of ${koalaScoreAverage}!`);
+// }else if (dolphinScoreAverage === koalaScoreAverage) {
+//     console.log(`The dolphins and the koalas tied!`);
+// }
+
+// The Switch Statement 
+
+let language = '';
+
+switch(language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log('MOST unmber of native speakers')
+        break
+    case ('spanish'):
+        console.log('Second place in number of native speakers')
+        break
+    case ('english'):
+        console.log('Third place')
+        break
+    case ('hini'):
+        console.log('Number Four')
+    case ('arabic'):
+        console.log('Fifth most spoken language')
+        break
+    default:
+        console.log('Great language too!')
+    }
+
+// The Conditional (Ternary) Operator
+function population(num){
+    return (num > 33 ? "Portugal is above average" : "Portugal is below average")
 }
+
+
+
+
 
 
 
